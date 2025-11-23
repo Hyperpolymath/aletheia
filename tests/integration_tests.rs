@@ -123,8 +123,9 @@ fn test_empty_repository() {
         "Empty repository should fail verification");
 
     let stdout = String::from_utf8_lossy(&output.stdout);
-    assert!(stdout.contains("0/16 checks passed"),
-        "Should pass no checks");
+    // Empty repo should fail Bronze compliance
+    assert!(stdout.contains("Bronze-level RSR compliance: NOT MET"),
+        "Should not meet Bronze compliance");
 
     // Clean up
     fs::remove_dir_all(repo).ok();
