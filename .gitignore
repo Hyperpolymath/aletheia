@@ -1,49 +1,79 @@
-# Rust build artifacts
-/target/
-**/*.rs.bk
-*.pdb
+# SPDX-License-Identifier: AGPL-3.0-or-later
+# RSR-compliant .gitignore
 
-# Cargo lock file (we KEEP this for reproducible builds)
-# Cargo.lock
-
-# IDE and editor files
-.vscode/
-.idea/
+# OS & Editor
+.DS_Store
+Thumbs.db
 *.swp
 *.swo
 *~
-.DS_Store
+.idea/
+.vscode/
 
-# Cargo cache
-.cargo/
+# Build
+/target/
+/_build/
+/build/
+/dist/
+/out/
 
-# Test coverage reports
-coverage/
-*.profraw
-*.profdata
+# Dependencies
+/node_modules/
+/vendor/
+/deps/
+/.elixir_ls/
 
-# Documentation build
-/target/doc/
+# Rust
+# Cargo.lock  # Keep for binaries
 
-# Nix build results
-result
-result-*
+# Elixir
+/cover/
+/doc/
+*.ez
+erl_crash.dump
 
-# CI/CD artifacts
+# Julia
+*.jl.cov
+*.jl.mem
+/Manifest.toml
+
+# ReScript
+/lib/bs/
+/.bsb.lock
+
+# Python (SaltStack only)
+__pycache__/
+*.py[cod]
+.venv/
+
+# Ada/SPARK
+*.ali
+/obj/
+/bin/
+
+# Haskell
+/.stack-work/
+/dist-newstyle/
+
+# Chapel
+*.chpl.tmp.*
+
+# Secrets
+.env
+.env.*
+*.pem
+*.key
+secrets/
+
+# Test/Coverage
+/coverage/
+htmlcov/
+
+# Logs
 *.log
+/logs/
 
-# Temporary files
-tmp/
-temp/
+# Temp
+/tmp/
 *.tmp
-
-# OS files
-Thumbs.db
-Desktop.ini
-
-# Backup files
 *.bak
-*.backup
-
-# Just build artifacts
-.just/
