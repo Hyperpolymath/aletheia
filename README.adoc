@@ -1,5 +1,7 @@
 = Aletheia
 
+image::https://img.shields.io/badge/RSR-Bronze-cd7f32[Rhodium Standard Bronze,link=https://github.com/hyperpolymath/rhodium-standard-repositories]
+
 > *Ἀλήθεια* (alētheia) - Greek: "truth", "disclosure", "unconcealment"
 
 *Aletheia* is a zero-dependency repository health checker that verifies your project has essential documentation, security disclosure, and build configuration in place.
@@ -87,19 +89,6 @@ Score: 16/16 checks passed (100.0%)
 4. *Single Binary* - Easy to distribute and audit (~810 lines)
 5. *Self-Verifying* - Aletheia passes its own checks
 
-== RSR Compliance
-
-Aletheia implements checks for https://gitlab.com/maa-framework[RSR (Rhodium Standard Repository)] Bronze-level compliance. The RSR framework defines standards for repository documentation, security, and operational excellence.
-
-This repository itself is RSR Bronze-level compliant:
-
-- 28 tests (10 unit + 18 integration)
-- Zero dependencies, zero unsafe code
-- Complete documentation suite
-- RFC 9116 security.txt
-- Nix + Just build automation
-- GitLab CI + GitHub Actions
-
 == Security
 
 - *No unsafe code* - Zero `unsafe` blocks
@@ -125,6 +114,7 @@ Dual-licensed under MIT and Palimpsest v0.8. See link:LICENSE.txt[LICENSE.txt].
 - https://gitlab.com/maa-framework/6-the-foundation/aletheia[Repository]
 - link:ROADMAP.md[Roadmap]
 - link:CHANGELOG.md[Changelog]
+- link:RSR-CONFORMITY.md[RSR Conformity Statement]
 
 ---
 
