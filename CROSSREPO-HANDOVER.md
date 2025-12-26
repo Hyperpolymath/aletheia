@@ -26,6 +26,27 @@ Every Hyperpolymath project receives inputs from two complementary systems:
 **Handles**: Language choices, containers, integrations, efficient code practices
 **Tools**: cccp-portfolio, svalinn (containers), corre-terro (images), scaffoldia
 
+**Core Infrastructure (almost always present):**
+| Tool | Purpose |
+|------|---------|
+| **Cerro Torre** | Provenance-verified container base images (replaces Alpine/Wolfi) |
+| **Svalinn** | Edge shield (ReScript/Deno) + Vörðr OCI runtime |
+| **Valence Shell** | Reversible shell scripting |
+| **Echidna/echidnabot** | Formal proof-based code validation |
+
+**Application Layer (as needed):**
+| Tool | Purpose |
+|------|---------|
+| **rescript-tea** | The Elm Architecture for ReScript |
+| **cadre-router** | Typed HTTP routing with CRDTs |
+| **casket-ssg** | Static site generator |
+| **poly-*-mcp** | MCP tools (ssg, isc, container, etc.) |
+
+**Bot Pattern (from oikos):**
+Bots operate in multiple modes: consultant, advisor, regulator, policy developer.
+They are **self-referential** - they validate their own code.
+Polyglot: specialized languages for each task.
+
 **The Connection to Thermodynamics**:
 - Landauer's Principle: Computation dissipates heat (kT ln 2 per bit erased)
 - Reversible computing: Zero heat dissipation (CNOs from Absolute Zero)
