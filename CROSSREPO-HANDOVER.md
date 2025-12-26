@@ -196,6 +196,36 @@ Polyglot: specialized languages for each task.
 | `valence-shell` | Reversible filesystem operations | Check status |
 | `aletheia` | Precursor to r-Minix (reversible Minix) | Needs restart |
 
+## Aletheia Specific Setup
+
+This project (aletheia) will have the following structure when properly configured:
+
+### Bots Present
+- **echidnabot** - Formal proof-based code validation
+- **oikos bot** - Economic/ecological analysis
+- **rhodibot** - RSR compliance checking
+
+### AI Support Files (.scm - Guile Scheme)
+| File | Purpose |
+|------|---------|
+| `META.scm` | Project metadata |
+| `ECOSYSTEM.scm` | Ecosystem connections and dependencies |
+| `STATE.scm` | Current project state |
+| `PLAYBOOK.scm` | Development playbook/workflows |
+| `AGENTIC.scm` | AI agent configuration |
+| `NEUROSYM.scm` | Neurosymbolic integration settings |
+
+### Other Files
+- `mustfile` - Custom build/task file format (hyperpolymath standard)
+- Created via `repo-customiser`
+
+### Licensing
+- **Base**: MIT or AGPL (user choice)
+- **Overlay**: Palimpsest License (optional but encouraged)
+
+### Foundational Input
+- **Absolute Zero** - CNO proofs, reversibility theory, Landauer/Bennett thermodynamics
+
 ## Workflow: New Project Creation
 
 ```
