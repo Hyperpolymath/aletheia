@@ -12,6 +12,41 @@ This document provides context for AI assistants working across the Hyperpolymat
 
 > "Every project should leave the user with a perfect repo that has everything and avoids anything problematic, so that the project itself is just fantastic. All of this should happen in the background."
 
+## Two Input Systems
+
+Every Hyperpolymath project receives inputs from two complementary systems:
+
+### RSR - Rhodium Standard Repositories
+**What**: Repository organization and compliance standards
+**Handles**: Documentation, security.txt, CI/CD, build systems, project structure
+**Tools**: rhodium-standard-repositories, rsr-template-repo, rhodibot, rhodium-pipeline
+
+### CCCP - Campaign for Cooling Coding and Programming
+**What**: Technology stack and code standards
+**Handles**: Language choices, containers, integrations, efficient code practices
+**Tools**: cccp-portfolio, svalinn (containers), corre-terro (images), scaffoldia
+
+**The Connection to Thermodynamics**:
+- Landauer's Principle: Computation dissipates heat (kT ln 2 per bit erased)
+- Reversible computing: Zero heat dissipation (CNOs from Absolute Zero)
+- CCCP "Cooling": Efficient, low-energy, well-structured code
+
+```
+┌─────────────────────────────────────────────────────────────────────────────┐
+│                              ANY PROJECT                                    │
+└─────────────────────────────────────────────────────────────────────────────┘
+                    ▲                               ▲
+                    │                               │
+        ┌───────────┴───────────┐       ┌───────────┴───────────┐
+        │         RSR           │       │         CCCP          │
+        │  (Repository Layer)   │       │   (Code/Tech Layer)   │
+        │                       │       │                       │
+        │ • How repo organized  │       │ • What code goes in   │
+        │ • Docs, CI/CD, badges │       │ • Languages, patterns │
+        │ • Compliance checking │       │ • Containers, images  │
+        └───────────────────────┘       └───────────────────────┘
+```
+
 ## Ecosystem Architecture
 
 ```
